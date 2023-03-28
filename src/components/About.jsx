@@ -31,6 +31,7 @@ import postman from "../assets/stacks/postman.svg";
 import linux from "../assets/stacks/linux.svg";
 import git from "../assets/stacks/git.svg";
 import github from "../assets/stacks/github.svg";
+import docker from "../assets/stacks/docker.svg";
 
 const About = () => {
   const [ref, inView] = useInView({
@@ -82,7 +83,7 @@ const About = () => {
                 alt="Javascript"
                 className="bg-white rounded-md"
               />
-              <img src={java} alt="Java" className="bg-white rounded-md" />
+              <img src={java} alt="Java" className="bg-white rounded-md p-1" />
             </div>
             <div className="mb-4 flex max-w-[60px] gap-x-2">
               <img src={react} alt="" className="bg-white rounded-md" />
@@ -110,14 +111,8 @@ const About = () => {
               <img src={git} alt="" className="bg-white rounded-md p-1" />
               <img src={github} alt="" className="bg-white rounded-md p-1" />
               <img src={postman} alt="" className="bg-white rounded-md p-1" />
+              <img src={docker} alt="" className="bg-white rounded-md p-1" />
               <img src={linux} alt="" className="bg-white rounded-md p-1" />
-            </div>
-
-            <div className="flex gap-x-8 items-center">
-              <button className="btn btn-lg">Contact me</button>
-              <a href="#" className="text-gradient btn-link">
-                My Portfolio
-              </a>
             </div>
           </motion.div>
         </div>

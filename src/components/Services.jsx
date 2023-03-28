@@ -52,7 +52,13 @@ const Services = () => {
           >
             <h2 className="h2 text-accent mb-6">What i Do.</h2>
             <h3 className="h3 max-w-[455px] mb-16">My latest projects</h3>
-            <button className="btn btn-sm">See my work</button>
+            <a
+              href="https://github.com/nahuelvera00?tab=repositories"
+              target={"_blank"}
+              className="btn btn-sm py-4"
+            >
+              See my work
+            </a>
           </motion.div>
 
           {/* services */}

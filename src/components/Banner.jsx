@@ -3,7 +3,7 @@ import React from "react";
 import image from "../assets/avatar.jpg";
 
 //icons
-import { FaGithub } from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 //Type animations
 import { TypeAnimation } from "react-type-animation";
@@ -11,8 +11,12 @@ import { TypeAnimation } from "react-type-animation";
 //Motion
 import { motion } from "framer-motion";
 
+import { Link } from "react-scroll";
+
 //Variants
 import { fadeIn } from "../variants";
+
+import cv from "../assets/cv.pdf";
 
 const Banner = () => {
   return (
@@ -57,8 +61,18 @@ const Banner = () => {
               viewport={{ once: false, amount: 0.7 }}
               className="flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0"
             >
-              <button className="btn btn-lg">Contact me</button>
-              <a href="#" className="text-gradient btn-link">
+              <Link
+                to="contact"
+                smooth={true}
+                className="btn btn-lg flex justify-center items-center"
+              >
+                Contact me
+              </Link>
+              <a
+                href={cv}
+                download="CV-Vera-Nahuel"
+                className="text-gradient btn-link"
+              >
                 My Portfolio
               </a>
             </motion.div>
@@ -71,14 +85,22 @@ const Banner = () => {
               viewport={{ once: false, amount: 0.7 }}
               className="flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0"
             >
-              <a href="">
+              <a
+                href="https://github.com/nahuelvera00"
+                className="flex items-center justify-center gap-x-2"
+                target={"_blank"}
+              >
                 <FaGithub />
+                <p>Github</p>
               </a>
-              <a href="">
-                <FaGithub />
-              </a>
-              <a href="">
-                <FaGithub />
+
+              <a
+                href="https://www.linkedin.com/in/nahuel-vera-48ab86223/"
+                target={"_blank"}
+                className="flex items-center justify-center gap-x-2"
+              >
+                <FaLinkedin />
+                <p>Linkedin</p>
               </a>
             </motion.div>
           </div>
